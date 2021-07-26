@@ -11,6 +11,11 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
 
+//routes
+
+const articleOrServiceRoute = require('./server/routes/articleOrServiceRoute');
+app.use('/', articleOrServiceRoute);
+
 // prisijungimas prie duomenu bazes
 mongoose
   .connect(process.env.MONGO_CONNECT_STIRNG, {
