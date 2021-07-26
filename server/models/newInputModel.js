@@ -20,6 +20,6 @@ const ArticleOrServiceSchema = new Schema({
   },
 });
 
-const ArticleOrServiceModel = mongoose.model('country', ArticleOrServiceSchema);
+const ArticleOrServiceModel = mongoose.model('post', ArticleOrServiceSchema);
 
 module.exports = ArticleOrServiceModel;
